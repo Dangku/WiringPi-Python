@@ -1,33 +1,8 @@
-Note
-~~~~
-
-This is an unofficial port of Gordon's WiringPi library. Please do not
-email Gordon if you have issues, he will not be able to help.
-
-For support, comments, questions, etc please join the WiringPi Discord
-channel: https://discord.gg/SM4WUVG
-
 WiringPi for Python
 ===================
 
-WiringPi: An implementation of most of the Arduino Wiring functions for
-the Raspberry Pi.
-
-WiringPi implements new functions for managing IO expanders.
-
-Quick Install
-=============
-
-.. image:: https://badge.fury.io/py/wiringpi.svg
-   :alt: PyPI version badge
-   :target: https://pypi.org/project/wiringpi/
-
-The library is packaged on PyPI and can be installed with pip:
-
-``pip install wiringpi``
-
 Usage
-=====
+--------------------
 
 .. code:: python
 
@@ -111,34 +86,23 @@ Python 2, because then ``buf`` is a string, and strings are immutable).
 
 **Full details of the API at:** http://www.wiringpi.com
 
-Manual Build
-============
-
 Get/setup repo
 --------------
 
-.. code:: bash
-
-    git clone --recursive https://github.com/WiringPi/WiringPi-Python.git
-    cd WiringPi-Python
-
-Don't forget the ``--recursive``; it is required to also pull in the
-WiringPi C code from its own repository.
-
-Prerequisites
--------------
-
 To rebuild the bindings you **must** first have installed ``swig``,
 ``python-dev``, and ``python-setuptools`` (or their ``python3-``
-equivalents). WiringPi should also be installed system-wide for access
-to the ``gpio`` tool.
+equivalents).
 
 .. code:: bash
 
-    sudo apt-get install python-dev python-setuptools swig wiringpi
+    sudo apt-get install python-dev python-setuptools swig git
+    git clone --recursive https://github.com/Dangku/WiringPi-Python.git
+    cd WiringPi-Python
 
 Build & install with
 --------------------
+
+.. code:: bash
 
 ``sudo python setup.py install``
 
