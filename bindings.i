@@ -35,7 +35,7 @@ extern		int  physPinToGpio	(int physPin);
 extern		void pwmSetRange	(unsigned int range);
 extern		void pwmSetClock	(int divisor);
 extern		int  waitForInterrupt	(int pin, int mS);
-extern		int  wiringPiISRCancel	(int pin);
+extern		int  wiringPiISRStop	(int pin);
 extern		int  piThreadCreate	(void *(*fn)(void *));
 extern		void piLock		(int key);
 extern		void piUnlock		(int key);

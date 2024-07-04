@@ -12,7 +12,7 @@ for line in src:
 def is_c_decl(line):
     for fn in ['wiringPiISR','wiringPiSetupPiFace','wiringPiSetupPiFaceForGpioProg']:
         if fn in line:
-            if 'wiringPiISRCancel' in line:
+            if 'wiringPiISRStop' in line:
                 return True
             else:
                 return False
