@@ -11,7 +11,7 @@ extern		void usingGpiomemCheck	(const char *what);
 extern		void setUsingGpiomem	(const unsigned int value);
 extern		void setKernelVersion	(void);
 extern		char cmpKernelVersion	(int num, ...);
-extern		void wiringPiVersion	(int *major, char **minor);
+extern		void wiringPiVersion	(int *major, int *minor);
 extern		int  wiringPiSetup	(void);
 extern		int  wiringPiSetupSys	(void);
 extern		int  wiringPiSetupGpio	(void);
